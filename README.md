@@ -4,6 +4,21 @@
 
 一个基于 PaddleOCR Android 示例派生的本地 OCR 工具：用相机寻找指定的四位数字，命中后停留在结果画面，也支持图片与视频文字识别。**非官方项目，与阿里巴巴、菜鸟及 PaddlePaddle 无隶属、合作或背书关系。** 不连接物流账户，不查询运单，不负责核验包裹归属。
 
+## 界面预览
+
+<table>
+  <tr>
+    <th>包裹码识别与参数设置</th>
+    <th>处理耗时与识别结果</th>
+  </tr>
+  <tr>
+    <td><img src="docs/images/parcel-recognition.png" alt="包裹码识别画面，显示模型、batch、分辨率设置及四位数字检测框" width="360" /></td>
+    <td><img src="docs/images/timing-and-results.png" alt="前处理、检测、识别、后处理耗时以及文字识别结果和置信度" width="360" /></td>
+  </tr>
+</table>
+
+截图为普通识别示例，采用 PP-OCRv6_tiny、batch 2、四分之一分辨率；不代表默认配置或目标命中效果。耗时仅反映截图中的一次处理，不作为跨设备性能承诺。
+
 ## 功能与使用
 
 1. 等待离线模型加载完成，允许相机权限后启动相机。
